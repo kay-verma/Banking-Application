@@ -1,0 +1,63 @@
+<div class="main">
+  <h1 class="mat-display-1 header">Initiate Payment</h1>
+    <form  #myForm=ngForm (ngSubmit)="formSubmit(myForm)">
+      From Account:
+      <mat-form-field appearance="fill">
+        <input matInput style="cursor:pointer" for="fromAccount" name="fromAccount" [(ngModel)]="fromAccount" readonly>
+      </mat-form-field><br />
+      IFSC Code:
+      <mat-form-field appearance="fill">
+        <mat-label>11 Digit IFSC Code</mat-label>
+        <input matInput for="ifsc" name="ifsc" [(ngModel)]="ifsc" required>
+      </mat-form-field><br />
+      <div class="acc-num">
+        To Account:
+        <mat-form-field appearance="fill">
+          <mat-label>Receiver Account number</mat-label>
+          <input matInput for="toAccount" name="toAccount" [(ngModel)]="toAccount" required>
+        </mat-form-field>
+        <button type="button" class="beneficiary-btn" mat-raised-button (click)="setBeneficiary()">{{btnText}}</button><br />
+      </div>
+        <div layout="row" *ngIf="showBeneficiary">
+            <mat-card class="example-card card-card" *ngFor="let benef of beneficiaries">
+                <div>
+                    <mat-card-title style="display: inline">{{benef.nickname}}</mat-card-title>
+                </div>
+                <mat-card-content>
+                  <h3 class="mat-body">Acc/ No: <b>{{benef.beneficiaryaccno}}</b></h3>
+                  <h3 class="mat-body">IFSC: <b>{{benef.ifsccode}}</b></h3>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button type="button" mat-raised-button color="primary" (click)="selectBenef(benef.beneficiaryaccno, benef.ifsccode)">Select</button>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+        Amount: 
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Amount </mat-label>
+          <input type="number" matInput for="amount" name="amount" [(ngModel)]="amount" required>
+        </mat-form-field><br />
+        Type: 
+        <mat-form-field appearance="fill">
+          <mat-label>Select Transaction Type</mat-label>
+          <mat-select name="trans_type" [(ngModel)]="trans_type">
+            <mat-option value="NEFT" selected>NEFT</mat-option>
+            <mat-option value="IMPS">IMPS</mat-option>
+            <mat-option value="RTGS">RTGS</mat-option>
+          </mat-select>
+        </mat-form-field><br />
+        Remarks:
+        <mat-form-field appearance="fill">
+          <mat-label>Add any Comment</mat-label>
+          <input matInput for="remarks" name="remarks" [(ngModel)]="remarks">
+        </mat-form-field><br />
+        <div >
+          <mat-form-field *ngIf="showOtp" appearance="fill">
+            <mat-label>Enter OTP</mat-label>
+            <input matInput [(ngModel)]="enteredOtp" name="enteredOtp">
+        </mat-form-field><br />
+      </div>
+        <button type="button" mat-raised-button style="margin-right: 15%; margin-top: 2%;" (click)="reset()">Reset</button>
+        <button mat-raised-button type="submit">Continue</button>
+    </form>
+</div>

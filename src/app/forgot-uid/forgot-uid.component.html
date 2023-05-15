@@ -1,0 +1,31 @@
+<html>
+<body>
+<div class="outer-main"></div>
+<div class="main">
+    <a href="#" class="badge badge-primary" style="padding:10px;font-weight:bold;margin-right:100%">Back to Home</a>
+    <h1 class="mat-display-1 header">Forgot User ID</h1>
+    <div class="details-div">
+        <mat-form-field appearance="fill">
+            <mat-label>Enter Account Number</mat-label>
+            <input matInput [(ngModel)]="accNumber" (ngModelChange)="accountNumber()">
+        </mat-form-field><br />
+        <button class="requestOTP-btn" mat-raised-button color="primary" (click)="requestOTP()" [disabled]="allowRequest">Request OTP</button><br />
+        <div *ngIf="requestedOTP">
+            <mat-form-field appearance="fill">
+                <mat-label>Enter OTP</mat-label>
+                <input matInput [(ngModel)]="inputOtp">
+            </mat-form-field><br />
+            <p class="mat-h3 otp-text">You can request another OTP in {{time}} seconds</p>
+        </div>
+        <div *ngIf="!otpVerified && hasSubmitted">
+            <p class="mat-h3 otp-text">Incorrect OTP</p>
+        </div>
+        <div *ngIf="otpVerified">
+            <p *ngIf="showMessage" class="mat-h3 otp-text">{{message}}</p>
+        </div>
+        <button class="back-btn" mat-raised-button color="primary">Back</button>
+        <button  mat-raised-button color="primary" (click)="submitOtp()">Proceed</button>
+    </div>
+</div>
+</body>
+</html>

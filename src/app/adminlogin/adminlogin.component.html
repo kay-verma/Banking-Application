@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Easiest Way to Add Input Masks to Your Forms</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="adminlogin.component.css">
+</head>
+<body>
+    <div class="registration-form">
+        <form #adminloginForm="ngForm" (ngSubmit)="formSubmit(adminloginForm)" novalidate>
+            <a href="#" class="badge badge-primary" style="padding:10px;font-weight:bold;">Back to Home</a>
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+            <div class="text-center">
+                <h4>Admin Login</h4><br>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="adminID" name="adminID" required minlength="1" placeholder="Enter Admin ID "  [(ngModel)]="adlog.adminId">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control item" id="password" name="password" required minlength="1" placeholder="Enter Admin Password" 
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" [(ngModel)]="adlog.adminPwd"> 
+            </div>
+            <p *ngIf="showError" class="mat-h3 error-text">{{errorMsg}}</p>
+            <div class="text-center">
+            <br><button type="submit"[disabled]="!adminloginForm.valid" class="btn btn-outline-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+      <script src="assets/js/script.js"></script>
+  </body>
+  </html>
+ 
+ 
+ 
+ 
+<!-- <p>adminlogin works!</p> -->
+ 
+ 
+<!-- <form #adminloginForm="ngForm" (ngSubmit)="formSubmit(adminloginForm)" novalidate>
+    <table>
+        <div class="regbox">
+            <h1>Admin Login</h1>
+        <tr>
+            <td><label for="adminid">Admin Login ID</label></td>
+            <td><input type="text" id="adminid" name="adminid" required placeholder="Enter Admin ID" 
+                ngModel></td>
+        </tr>
+        <tr>
+            <td><label for="apwd">Admin Password</label></td>
+            <td><input type="password" id="apwd" name="adminpwd" required placeholder="Enter Admin Password" 
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" ngModel></td><br><br>
+        </tr>
+        <tr>
+            <td><button type="submit" [disabled]="!adminloginForm.valid">Submit</button></td>
+        </tr>
+    </div>
+    </table>
+  
+</form> -->
+

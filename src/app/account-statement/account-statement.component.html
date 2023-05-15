@@ -1,0 +1,46 @@
+<h1 style="text-align:center; margin-top:2%">Account Statement</h1>
+<table [dataSource]="dataSource" mat-table class="mat-elevation-z8">
+
+    <ng-container matColumnDef="Ref No">
+      <th mat-header-cell *matHeaderCellDef> Ref. No. </th>
+      <td mat-cell *matCellDef="let element"> {{element.transactionId}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Remarks">
+      <th mat-header-cell *matHeaderCellDef> Description </th>
+      <td mat-cell *matCellDef="let element"> {{element.remarks}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Date">
+      <th mat-header-cell *matHeaderCellDef> Credit </th>
+      <td mat-cell *matCellDef="let element"> {{element.timestamp}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="From/To">
+      <th mat-header-cell *matHeaderCellDef> From/To</th>
+      <td mat-cell *matCellDef="let element"> {{element.toAccountNum}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Credit">
+      <th mat-header-cell *matHeaderCellDef> Credit </th>
+      <td mat-cell *matCellDef="let element"> {{element.action==="Credit" ?element.amount: '-'}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Debit">
+      <th mat-header-cell *matHeaderCellDef> Debit </th>
+      <td mat-cell *matCellDef="let element"> {{element.action==="Debit" ?element.amount: '-'}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Mode">
+      <th mat-header-cell *matHeaderCellDef> Mode </th>
+      <td mat-cell *matCellDef="let element"> {{element.transactionType}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Closing Balance">
+      <th mat-header-cell *matHeaderCellDef> Closing Balance</th>
+      <td mat-cell *matCellDef="let element; let index = index"> {{index == 0? currentBalance: element.closingBalance}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr> 
+     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

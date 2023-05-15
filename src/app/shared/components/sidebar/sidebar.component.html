@@ -1,0 +1,22 @@
+<mat-nav-list>
+    <div class="profile-card">
+        <div class="header">
+            <img src="https://heritageschools.org/images/user_img.jpg" alt="">
+            <h2>Welcome, {{firstName}}</h2>
+        </div>
+    </div>
+<mat-divider></mat-divider>
+<h2 matSubheader>Dashboard</h2>
+<a mat-list-item routerLinkActive ="list-item-active" routerLink="/dashboard">Account Summary</a>
+<mat-divider></mat-divider>
+<a mat-list-item routerLinkActive ="list-item-active" routerLink="/dashboard/accountDetails">Account Details</a>
+<mat-divider></mat-divider>
+<a mat-list-item routerLinkActive ="list-item-active" routerLink="/dashboard/payment">Fund Transfer</a>
+<mat-divider></mat-divider>
+<a mat-list-item routerLinkActive ="list-item-active" routerLink="/dashboard/accountStatement">Account Statement</a>
+<mat-divider></mat-divider>
+<a mat-list-item routerLinkActive ="list-item-active" routerLink="/dashboard/payee">Add Benificiary</a>
+<mat-divider></mat-divider>
+<a mat-list-item routerLinkActive ="list-item-active" routerLink="/dashboard/beneficiaries">View Benificiaries</a>
+<mat-divider></mat-divider>
+</mat-nav-list>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+      <html>
+      <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>The Easiest Way to Add Input Masks to Your Forms</title>
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+          <link rel="stylesheet" href="openaccount.component.css">
+      </head>
+      <body>
+        <div class="registration-form">
+            <form #openaccountForm="ngForm" (ngSubmit)="formSubmit(openaccountForm)" novalidate>
+                <a href="#" class="badge badge-primary" style="padding:10px;font-weight:bold;">Back to Home</a>
+                <div class="form-icon" >
+                    <span><i class="icon icon-user"></i></span>
+                </div>
+                <div class="text-center">
+                    <h4>Open an Account</h4><br>
+                </div>
+                <div class="form-group" class="form-control item">
+                    <select name="userTitle"  [(ngModel)]="openacc.userTitle">
+                            <option selected="selected" value="Title">Title</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Mrs">Mrs</option>
+    
+                            </select></div>
+                      
+                <div class="form-group" >
+                    <input type="text" class="form-control item" id="firstname" name="userFirstname" required minlength="1" placeholder="Enter First Name"  [(ngModel)]="openacc.userFirstname">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" id="middlename" name="userMiddlename" required minlength="1" placeholder="Enter Middle Name"  [(ngModel)]="openacc.userMiddlename">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" id="lastname" name="userLastname" required minlength="1" placeholder="Enter Last Name"   [(ngModel)]="openacc.userLastname">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" id="fathername" name="userFathername" required minlength="1" placeholder="Enter Father's Name"   [(ngModel)]="openacc.userFathername">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control item" id="mobileno" name="userMobileno" required minlength="1" pattern="[6789][0-9]{9}"  placeholder="Enter Mobile Number"  [(ngModel)]="openacc.userMobileno">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control item" id="emailid" name="userEmailid" required minlength="1" placeholder="Enter Email ID"  [(ngModel)]="openacc.userEmailid">
+                </div>
+                <div class="form-group">
+                    <input type="date" class="form-control item" id="dob" name="userDob" required minlength="1" placeholder="Enter Date of Birth"   [(ngModel)]="openacc.userDob">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control item" id="aadharcard" name="userAadharcard" required minlength="1" placeholder="Enter AadharCard number"   [(ngModel)]="openacc.userAadharcard">
+                </div>
+                <div class="form-group">
+                    <input type="address" class="form-control item" id="residentialaddr" name="userResidentialaddr" required minlength="1" placeholder="Enter Residential Address"  [(ngModel)]="openacc.userResidentialaddr">               
+               </div>
+                <div class="form-group">
+                    <input type="address"  class="form-control item" id="permanentaddr" name="userPermanentaddr" required minlength="1" placeholder="Enter Permanent address"  [(ngModel)]="openacc.userPermanentaddr"> 
+                </div>
+               
+ 
+                <div class="form-group" class="form-control item">
+                    <select name="userOccupationType"  [(ngModel)]="openacc.userOccupationType">
+                            <option selected="selected" value="Occupation Type">Occupation Type</option>
+                            <option value="Student">Student</option>
+                            <option value="Housewife">Housewife</option>
+                            <option value="Pensioner">Pensioner</option>
+                            <option value="Professional">Professional</option>
+                            <option value="Service">Service</option>
+                            <option value="Business">Business</option>
+                            </select></div>
+                <div class="form-group" class="form-control item">
+                    <select name="userGrossannualincome"  [(ngModel)]="openacc.userGrossannualincome">
+                        <option selected="selected" value="Gross Annual Income">Gross Annual Income</option>
+                        <option value="Below 100000">Below 100000</option>
+                        <option value="100000 to 500000">100000 to 500000</option>
+                        <option value="More than 500000">More than 500000</option>
+ 
+                        </select></div>
+ 
+                        <p *ngIf="showMsg" [style.color]="classExpression" class="mat-h3 error-text">{{confirmationMsg}}</p>
+                        <div class="text-center">
+                        <br><button type="submit"[disabled]="!openaccountForm.valid" class="btn btn-outline-primary">Submit</button>
+                        </div>
+            </form>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+          <script src="assets/js/script.js"></script>
+      </body>
+      </html>
+ 
+ 
+ 

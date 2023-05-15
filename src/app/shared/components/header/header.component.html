@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="toggleSideBar()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span> LTI BANKS </span>
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+            <ul fxLayout="row" fxLayoutGap="20px"> 
+                <li>
+                    <a color="white " mat-list-item routerLinkActive ="list-item-active" routerLink="/dashboard/changePassword"><h6 style="font-size:15px; padding-top: 2px;">Change password</h6></a>
+                    
+                    </li>
+                <li><h6 style="font-size:10px; padding-top: 2px;">{{dateTime}}</h6></li>
+                
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>help_icon</mat-icon></button>
+                    </li>
+                    <li>
+                        <button mat-button [matMenuTriggerFor]="menu"><mat-icon>person_outline</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item>
+                                <mat-icon>person_outline</mat-icon>
+                                Your Profile
+                      </button >
+                             <button mat-menu-item (click)="signOut()">
+                                  <mat-icon >exit_to_app</mat-icon>
+                                  Sign out
+                        </button>
+                        
+       </mat-menu>
+         </li>
+                
+            </ul>
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>

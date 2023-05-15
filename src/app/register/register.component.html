@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+      <html>
+      <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>The Easiest Way to Add Input Masks to Your Forms</title>
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+          <link rel="stylesheet" href="register.component.css">
+      </head>
+      <body>
+        <div class="registration-form">
+            <form  #regForm="ngForm" (ngSubmit)="formSubmit(regForm)" novalidate>
+                <a href="#" class="badge badge-primary" style="padding:10px;font-weight:bold;">Back to Home</a>
+                <div class="form-icon">
+                    <span><i class="icon icon-user"></i></span>
+                </div>
+                <div class="text-center">
+                    <h4>Register Here for Net Banking</h4><br>
+                </div>
+                <div class="form-group" >
+                    <input class="form-control item" id="accno" name="accno" required minlength="1" placeholder="Enter Account Number"   [(ngModel)]="reg.accountNo">
+                </div>
+                <div class="form-group">
+                    <input type="string" class="form-control item" id="userid" name="userid" required minlength="1" placeholder="Enter User ID"  [(ngModel)]="reg.userid">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control item" id="lpwd" name="lpwd" required minlength="1" placeholder="Enter Login Password"  
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" [(ngModel)]="reg.loginpwd">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control item" id="clpwd" name="clpwd" required minlength="1" placeholder="Confirm Login Password"  
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" ngModel>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control item" id="tpwd" name="tpwd" required minlength="1" placeholder="Enter Transaction Password"  
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" [(ngModel)]="reg.transactionpwd">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control item" id="ctpwd" name="ctpwd" required minlength="1" placeholder="Confirm Transaction Password"  
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" ngModel >
+                </div>
+                <p *ngIf="showMsg" [style.color]="classExpression" class="mat-h3 error-text">{{confirmationMsg}}</p>
+                <div class="text-center">
+                    <br><button type="submit"[disabled]="!regForm.valid" class="btn btn-outline-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+              <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+              <script src="assets/js/script.js"></script>
+          </body>
+          </html>

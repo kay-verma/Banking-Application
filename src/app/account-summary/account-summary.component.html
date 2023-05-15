@@ -1,0 +1,38 @@
+<mat-card>
+    <mat-card-content>
+        <div class="summary">
+            <img src="https://pbs.twimg.com/media/EDwzV-cVUAAPn19?format=jpg&name=900x900" alt="">
+           
+        </div>
+        <div>
+            <mat-accordion>
+              
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                     (closed)="panelOpenState = false">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Show More details
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      <b>Available balance : {{panelOpenState ? balance : balance}}</b>
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <p>Account No. : {{accountNo}}<br>
+                    Account Type : {{type}}<br>
+                Name: {{name}} {{lastName}} <br>
+                IFSC: {{ifsc}}<br></p>
+                </mat-expansion-panel>
+              </mat-accordion>
+              <br>
+              <h4> Note:    
+                The Available Balance displayed includes the credit balance and overdraft limit (if any) in your account.<br>
+                (i) It does not include Uncleared Funds. <br>
+                (ii) It includes amount marked for hold.
+              </h4>
+             
+             
+        </div>
+    </mat-card-content>
+ </mat-card>
+ 
+ 

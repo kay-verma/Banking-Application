@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Easiest Way to Add Input Masks to Your Forms</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="payee.component.css">
+</head>
+<body>
+    <div class="registration-form">
+        <form #payeeForm="ngForm" (ngSubmit)="formSubmit(payeeForm)" novalidate>
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+            <div class="text-center">
+                <h4>Add New Payee</h4><br>
+            </div>
+            <div class="form-group">
+                <input type="text" id="uaccno" name="userAccountNumber" [(ngModel)]="fromAccount" class="form-control item" required  readonly placeholder="Enter User Account Number">
+            </div>
+            <div class="form-group">
+                <input type="text" id="bname" name="beneficiaryName"  class="form-control item" required placeholder="Enter Beneficiary Name" [(ngModel)]="bene.beneficiaryname">
+            </div>
+ 
+            <div class="form-group">
+                <input type="text" id="rbaccno" name="RbeneficiaryAccountNumber"  class="form-control item" required placeholder="Enter Beneficiary Account Number" [(ngModel)]="bene.beneficiaryaccno">
+            </div>
+ 
+            <div class="form-group">
+                <input type="text" id="rbaccno" name="RbeneficiaryAccountNumber" class="form-control item" required  placeholder="Re-Enter Beneficiary Account Number" ngModel>
+            </div>
+ 
+            <div class="form-group">
+                <input type="text" id="bifsc" name="beneficiaryIFSCcode" class="form-control item" required placeholder="Enter IFSC Code" [(ngModel)]="bene.ifsccode">
+            </div>
+ 
+            <div class="form-group">
+                <input type="text" id="nickname" name="beneficiaryNickName" class="form-control item" required placeholder="Enter Nick Name" [(ngModel)]="bene.nickname">
+            </div>
+            
+            <p *ngIf="showMsg" [style.color]="classExpression" class="mat-h3 error-text">{{confirmationMsg}}</p>
+            <div class="text-center">
+            <br><button type="submit"[disabled]="!payeeForm.valid" class="btn btn-outline-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+      <script src="assets/js/script.js"></script>
+  </body>
+  </html>
+ 

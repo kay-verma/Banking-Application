@@ -1,0 +1,43 @@
+<html>
+<body>
+<div class="outer-main"></div>
+<div class="main">
+    <a href="#" class="badge badge-primary" style="padding:10px;font-weight:bold;margin-right:100%">Back to Home</a>
+    <h1 class="mat-display-1 header">Forgot Password</h1>
+    <div class="details-div">
+        <h2 class="mat-h2">Enter details here</h2>
+        <mat-form-field *ngIf="!otpVerified" appearance="fill">
+            <mat-label>Enter Account Number</mat-label>
+            <input matInput [(ngModel)]="accNumber" (ngModelChange)="accountNumber()">
+        </mat-form-field><br />
+        <button *ngIf="!otpVerified" class="requestOTP-btn" mat-raised-button color="primary" (click)="requestOTP()" [disabled]="allowRequest">Request OTP</button><br />
+        <div *ngIf="requestedOTP && !otpVerified">
+            <mat-form-field appearance="fill">
+                <mat-label>Enter OTP</mat-label>
+                <input matInput [(ngModel)]="inputOtp">
+            </mat-form-field><br />
+            <p class="mat-h3 otp-text">You can request another OTP in {{time}} seconds</p>
+        </div>
+        <div *ngIf="otpVerified">
+            Enter New Password:
+            <mat-form-field appearance="fill">
+                <mat-label>Enter New Password:</mat-label>
+                <input type="password" matInput (ngModelChange)="passwordChange()" [(ngModel)]="password">
+            </mat-form-field><br />
+            Confirm New Password:
+            <mat-form-field appearance="fill">
+                <mat-label>Confirm New Password:</mat-label>
+                <input type="password" matInput (ngModelChange)="passwordChange()" [(ngModel)]="confirmPassword">
+            </mat-form-field><br />
+        </div>
+        <div *ngIf="!otpVerified && hasSubmitted">
+            <p class="mat-h3 otp-text">Incorrect OTP</p>
+        </div>
+        <p *ngIf="showMessage" class="mat-h3 otp-text">{{message}}</p>
+        <button class="back-btn" mat-raised-button color="primary">Back</button>
+        <button  mat-raised-button color="primary" (click)="submitOtp()">Proceed</button>
+    </div>
+</div>
+
+</body>
+</html>

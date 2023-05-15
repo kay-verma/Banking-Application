@@ -1,0 +1,23 @@
+<div style="text-align:center;">
+    <h1>View All Beneficiaries</h1>
+    <table border="1" style="margin-left: 20%;">
+        <thead class="table table-primary">
+            <th>Account Number</th>
+            <th>Beneficiary Account Number</th>
+            <th>Beneficiary Name</th>
+            <th>Nick Name</th>
+            <th>IFSC code</th>
+            <th>Action</th>
+        </thead>
+        
+            <tr *ngFor="let b of beneficiaryDetails">
+                <td>{{b.accountNo}}</td>
+                <td>{{b.beneficiaryaccno}}</td>
+                <td>{{b.beneficiaryname}}</td>
+                <td>{{b.nickname}}</td>
+                <td>{{b.ifsccode}}</td>
+                <td>{{b.beneficiaryId}}</td>
+                <td> <button (click)="deleteRow(b.beneficiaryId)">Delete</button></td>
+            </tr>
+    </table>
+</div>

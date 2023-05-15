@@ -1,0 +1,19 @@
+<div style="text-align:center; margin-top: 5%" *ngIf="status.length==0">
+    <h1>{{message}}</h1>
+
+    <h3 class="mat-body">Reference ID: <b>{{referenceID}}</b></h3>
+    <h3 class="mat-body">Mode: <b>{{mode}}</b></h3>
+    <h3 class="mat-body">Paid To Account: <b>{{paidToAccount}}</b></h3>
+    <h3 class="mat-body">Amount: <b>{{amount}}</b></h3>
+    <h3 class="mat-body">From Account:<b>{{fromAccount}}</b></h3>
+    <h3 class="mat-body">On: <b>{{on}}</b></h3>
+    <h3 class="mat-body">Remarks: <b>{{remarks}}</b></h3>    
+</div>
+<div style="text-align:center; margin-top: 10%" *ngIf="status.length>0">
+    <h1 style="color: red">Transaction Failed</h1>
+    <h1>{{message}}</h1>
+
+    <h3 class="mat-body">Amount: <b>{{amount}}</b></h3>
+    <h3 class="mat-body">Paid To Account: <b>{{paidToAccount}}</b></h3>
+    <h3 class="mat-body">From Account:<b>{{fromAccount}}</b></h3>
+</div>
