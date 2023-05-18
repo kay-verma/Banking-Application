@@ -6,4 +6,4 @@ export class Register {
     transactionpwd:string="";
 
     constructor(){}
-}
+
