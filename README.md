@@ -16,7 +16,7 @@
 <img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-7.png" alt="antalitan" />  <br>
 ## Dashboard
   <br>
-<p align="center"><img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-10.png" alt="antalitan" ></p> <br>
+<p align="center"><img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-10.png" alt="antalitan" ></p>
 
 ## Transactions
 <br>
