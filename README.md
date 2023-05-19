@@ -10,12 +10,12 @@
   <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="60" height="60"/> </a>
 <p align="left"> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/dd543f7181aacc2cc0f62d3814249f66eb0cb20ce73695103a367f9e7e45f53b/68747470733a2f2f63646e2e7261776769742e636f6d2f6d69636861656c646f79652f6d61742d70726f67726573732d627574746f6e732f6d61737465722f64656d6f2f7372632f6173736574732f6c6f676f2e737667" alt="angularjs" width="60" height="60"/></a>
 <a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/7ab6964e09723ec9951ed10436b34c29a325f356649b77ff5c02f64ba53b5752/68747470733a2f2f647a6f6e652e636f6d2f73746f726167652f74656d702f31323433343131382d737072696e672d626f6f742d6c6f676f2e706e67" alt="spring" width="60" height="60"/> </a>
-<img src="https://raw.githubusercontent.com/yanyingwang/smtp/master/favicon.jpg" alt="smtp" width="70" height="70"/>
+<img src="https://raw.githubusercontent.com/yanyingwang/smtp/master/favicon.jpg" alt="smtp" width="70" height="70"/></p>
   
-
+## Landing Page
 <img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-7.png" alt="antalitan" />
   <br>
-## Dashboard 
+## Dashboard
   <br>
 <p align="center"><img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-10.png" alt="antalitan" ></p>
 <p align="left"><img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-11.jpg" alt="antalitan" width="500" height="250"/>
