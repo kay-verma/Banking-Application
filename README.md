@@ -13,7 +13,7 @@
   <li>Spring Boot v2.5.3</li>
   <li>Github</li> </ul></p>
 
-<img src="sample-images/Project Gladiator Banking Application-7.png" alt="antalitan" />
+<img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-7.png" alt="antalitan" />
 <img src="sample-images/Project Gladiator Banking Application-10.png" alt="antalitan" />
 ## Development server
 
