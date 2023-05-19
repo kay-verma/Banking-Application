@@ -13,8 +13,7 @@
   <li>Spring Boot v2.5.3</li>
   <li>Github</li> </ul></p>
 
-![LTI Bank Landing page](sample-images/Project Gladiator Banking Application-7.png)
-<img src="https://img.shields.io/twitter/follow/antalitan?logo=twitter&style=for-the-badge" alt="antalitan" />
+<img src="sample-images/Project Gladiator Banking Application-7.png" alt="antalitan" />
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
