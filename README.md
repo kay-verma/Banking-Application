@@ -16,8 +16,9 @@
 <img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-7.png" alt="antalitan" />  <br>
 ## Dashboard
   <br>
+## Transactions
 <p align="center"><img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-10.png" alt="antalitan" ></p>
-<p align="left"><img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-11.jpg" alt="antalitan" width="500" height="250"/>
+<p align="left"><img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-11.jpg" alt="antalitan" width="500" height="250"/> <br>
 <img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-9.jpg" alt="antalitan" width="500" height="250"/></p>
 
 ## Development server
