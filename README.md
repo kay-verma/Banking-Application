@@ -15,8 +15,9 @@
 
 <img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-7.png" alt="antalitan" />
 <img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-10.png" alt="antalitan" width="600" height="300"/>
-<img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-11.jpg" alt="antalitan" width="600" height="300"/>
-<img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-9.jpg" alt="antalitan" width="600" height="300"/>
+<p align="left"><img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-11.jpg" alt="antalitan" width="500" height="250"/></p>
+<p align="right"><img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-9.jpg" alt="antalitan" width="500" height="250"/></p>
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
