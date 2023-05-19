@@ -13,7 +13,7 @@
 <img src="https://raw.githubusercontent.com/yanyingwang/smtp/master/favicon.jpg" alt="smtp" width="70" height="70"/>
   
 
-<img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-7.png" alt="antalitan" width="250" height="400"/>
+<img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-7.png" alt="antalitan" width="500" height="250"/>
 <img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-10.png" alt="antalitan" width="60" height="60"/>
 <img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-11.jpg" alt="antalitan" width="60" height="60"/>
 <img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-9.jpg" alt="antalitan" width="60" height="60"/>
