@@ -3,15 +3,15 @@
 <p>Online banking application is specifically developed for internet banking for balance enquiry, funds transfer to another account, change of profile information and account statement. The traditional way of maintaining details of a user in a bank was to enter the details and record them. Every time the user needs to perform some transaction they have to go to bank and perform the necessary actions, which may not be so feasible all the time. Here, we provide an automation for banking system through Internet. The aim is not only automation but also a better customer experience by providing a User Interface which is easily comprehensible by any person. The website should also provide customer support so that the users get responded to their queries immediately and maintain the transparency so that the users should be aware of all the charges associated with the transaction.
 </p>
 <h3>Tools Used</h3>
-<p><ul>
-  <li>Angular CLI 12.2.0</li>
-  <li>Spring Tool Suite 4</li>
-  <li>Oracle 11g Express Edition</li>
-  <li>Bootstrap 4.0.0</li>
-  <li>SMTP protocol</li>
-  <li>Angular Material Ul</li>
-  <li>Spring Boot v2.5.3</li>
-  <li>Github</li> </ul></p>
+<p align="left"> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/89942104" alt="angularjs" width="40" height="40"/>
+<img src="https://raw.githubusercontent.com/github/explore/a0cf34a89ad56efa4cf947a7c8dc359d9b738b5d/topics/angular-cli/angular-cli.png" alt="angularjs" width="40" height="40"/></a>
+<a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> </a>
+  <a href="https://www.oracle.com/database/technologies/11g-112010-sparc64soft.html" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/github/explore/902a8a38f1e277eb27d2a10ab95a3d524a6ea22f/topics/oracle-database/oracle-database.png" alt="oracle11g" width="50" height="50"/> </a>
+  <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a>
+<p align="left"> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/dd543f7181aacc2cc0f62d3814249f66eb0cb20ce73695103a367f9e7e45f53b/68747470733a2f2f63646e2e7261776769742e636f6d2f6d69636861656c646f79652f6d61742d70726f67726573732d627574746f6e732f6d61737465722f64656d6f2f7372632f6173736574732f6c6f676f2e737667" alt="angularjs" width="40" height="40"/></a>
+<a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://camo.githubusercontent.com/7ab6964e09723ec9951ed10436b34c29a325f356649b77ff5c02f64ba53b5752/68747470733a2f2f647a6f6e652e636f6d2f73746f726167652f74656d702f31323433343131382d737072696e672d626f6f742d6c6f676f2e706e67" alt="spring" width="40" height="40"/> </a>
+<img src="  https://raw.githubusercontent.com/yanyingwang/smtp/master/favicon.jpg"alt="spring" width="40" height="40"/>
+  
 
 <img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-7.png" alt="antalitan" />
 <img src="https://ltibanks.s3.amazonaws.com/Project+Gladiator+Banking+Application-10.png" alt="antalitan" />
