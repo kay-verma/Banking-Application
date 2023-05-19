@@ -13,7 +13,8 @@
   <li>Spring Boot v2.5.3</li>
   <li>Github</li> </ul></p>
 
-
+<img src="https://drive.google.com/file/d/1oClZwe6HW830ILyH9rzW89dST94_iKSn/view?usp=share_link" alt="antalitan" />
+<img src="https://img.shields.io/twitter/follow/antalitan?logo=twitter&style=for-the-badge" alt="antalitan" />
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
